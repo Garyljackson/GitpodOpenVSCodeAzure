@@ -42,3 +42,4 @@ az container create \
 # Get the URI to access the application
 ACI_HOST_NAME=$(az container show --resource-group $RESOURCE_GROUP --name $CONTAINER_NAME --query ipAddress.fqdn --output tsv)
 echo http://$ACI_HOST_NAME:3000
+echo Done
